@@ -5,28 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="https://img.icons8.com/pastel-glyph/64/FFFFFF/calculator--v1.png" type="image/x-icon">
 </head>
 <body>
     <div class="calculator">
         <input type="text" id="display" disabled>
         <div class="buttons">
-            <button class="btn" onclick="sevenbtn()">7</button>
-            <button class="btn" onclick="eightbtn()">8</button>
-            <button class="btn" onclick="ninebtn()">9</button>
-            <button class="btn operator" onclick="dividebtn()">/</button>
-            <button class="btn" onclick="fourbtn()">4</button>
-            <button class="btn" onclick="fivebtn()">5</button>
-            <button class="btn" onclick="sixbtn()">6</button>
-            <button class="btn operator" onclick="multiplybtn()">*</button>
-            <button class="btn" onclick="onebtn()">1</button>
-            <button class="btn" onclick="twobtn()">2</button>
-            <button class="btn" onclick="threebtn()">3</button>
-            <button class="btn operator" onclick="subtract()">-</button>
-            <button class="btn" onclick="zerobtn()">0</button>
-            <button class="btn" onclick="dotbtn()">.</button>
-            <button class="btn operator" onclick="sumbtn">+</button>
-            <button class="btn operator" onclick="solution()">=</button>
-            <button class="btn clear"  onclick="clearInput();" >C</button>
+            <button class="btn" onclick="appendToDisplay('7')">7</button>
+            <button class="btn" onclick="appendToDisplay('8')">8</button>
+            <button class="btn" onclick="appendToDisplay('9')">9</button>
+            <button class="btn operator" onclick="appendToDisplay('/')">/</button>
+            <button class="btn" onclick="appendToDisplay('4')">4</button>
+            <button class="btn" onclick="appendToDisplay('5')">5</button>
+            <button class="btn" onclick="appendToDisplay('6')">6</button>
+            <button class="btn operator" onclick="appendToDisplay('*')">*</button>
+            <button class="btn" onclick="appendToDisplay('1')">1</button>
+            <button class="btn" onclick="appendToDisplay('2')">2</button>
+            <button class="btn" onclick="appendToDisplay('3')">3</button>
+            <button class="btn operator" onclick="appendToDisplay('-')">-</button>
+            <button class="btn" onclick="appendToDisplay('0')">0</button>
+            <button class="btn" onclick="appendToDisplay('.')">.</button>
+            <button class="btn operator" onclick="appendToDisplay('+')">+</button>
+            <button class="btn operator" onclick="calculateResult()">=</button>
+            <button class="btn clear" onclick="clearInput()">C</button>
         </div>
     </div>
     <script src="script.js"></script>
