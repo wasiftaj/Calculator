@@ -4,15 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <div>
-            <button type="button">=</button>
-            <button type="button">.</button>
-            <button type="button">0</button>
-            <button type="button">00</button>
+    <div class="calculator">
+        <input type="text" id="display" disabled>
+        <div class="buttons">
+            <button class="btn" onclick="sevenbtn()">7</button>
+            <button class="btn" onclick="eightbtn()">8</button>
+            <button class="btn" onclick="ninebtn()">9</button>
+            <button class="btn operator" onclick="dividebtn()">/</button>
+            <button class="btn" onclick="fourbtn()">4</button>
+            <button class="btn" onclick="fivebtn()">5</button>
+            <button class="btn" onclick="sixbtn()">6</button>
+            <button class="btn operator" onclick="multiplybtn()">*</button>
+            <button class="btn" onclick="onebtn()">1</button>
+            <button class="btn" onclick="twobtn()">2</button>
+            <button class="btn" onclick="threebtn()">3</button>
+            <button class="btn operator" onclick="subtract()">-</button>
+            <button class="btn" onclick="zerobtn()">0</button>
+            <button class="btn" onclick="dotbtn()">.</button>
+            <button class="btn operator" onclick="sumbtn">+</button>
+            <button class="btn operator" onclick="solution()">=</button>
+            <button class="btn clear"  onclick="clearInput();" >C</button>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
