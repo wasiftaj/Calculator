@@ -42,4 +42,4 @@ document.addEventListener("keydown", function(event) {
     } else if (event.key === 'Escape') {
         clearInput();
     }
-});
+}); 
